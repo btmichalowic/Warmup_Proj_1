@@ -1,0 +1,33 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/main.css" >
+    <% include ../partials/head %>
+</head
+><body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>Ben Michalowicz and Jeremy Ahn Present...</h1>
+        <p>Welcome to our CSE 356 warmup project #1</p>
+
+        <form action="/index.ejs" method="POST">
+    		<label for="team_name">Enter name: </label>
+		    <input id="team_name" type="text" name="name" value="">
+    		<input type="submit" value="OK">
+		</form>
+    </div>
+</main>
+
+
+
+
+
+</body>
+</html>
