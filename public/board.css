@@ -1,0 +1,21 @@
+.board {
+	width: 20em;
+	height: 20em;
+	position: relative;
+	background-color: #ddd;
+	border: 0.1em solid #555;
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	border: 0.1em solid #555;
+	color: inherit; /* blue colors for links too */
+	text-decoration: none; /* no underline */
+}
+.cell:hover {
+	background-color: #ccc;
+}

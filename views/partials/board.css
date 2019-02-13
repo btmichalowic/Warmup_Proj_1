@@ -1,0 +1,12 @@
+.board {
+	width: 10em;
+	position: relative;
+	background-color: #ddd;
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
