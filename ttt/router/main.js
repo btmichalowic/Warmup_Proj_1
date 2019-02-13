@@ -36,8 +36,17 @@ module.exports = function(app){
    // var comments = JSON.parse(fs.readFileSync(__dirname + '/../comments.json'));
   //  comments.push(newComment);
    // fs.writeFileSync(__dirname + '/../comments.json', comments, 'utf8');
-    //redirect to a 'get' on '/'
+    //redirect to a 'get' on '/
+		  //'
     res.redirect('/');
+		  Hello = '';
+
+  app.get('/', function(req, res){
+    //var comments = JSON.parse(fs.readFileSync(__dirname + '/../comments.json'));
+    res.render('index.ejs', {name: Hello});
+
+  });
+
 	}
   });
 

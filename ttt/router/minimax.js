@@ -35,14 +35,14 @@ function playTTT(turn){
 		if(turn == COMPUTER){
 			x = moves[move]/SIDE;
 			y = moves[move] % SIDE;
-			board[(x*y)-1)] = COMPUTERMOVE
+			board[(x*y)-1] = COMPUTERMOVE
 			move++;
 			turn = HUMAN;
 			
 		}else if(turn == HUMAN){
 			x = moves[move]/SIDE;
 			y = moves[move] % SIDE;
-			board[(x*y)-1)] = HUMANMOVE
+			board[(x*y)-1] = HUMANMOVE
 			move++;
 			turn = COMPUTER;
 
@@ -101,17 +101,3 @@ function rowCrossed(board){
 	return false;
 }
 
-function PossibleMoves(){
-	var list = [];
-	list.size=9;
-	var i = 0;
-	var j = 0;
-	for(i = 0; i< board.length; i++){
-		if(board[i] == ' '){
-			list[j] = i;
-			j++;
-		}
-	}
-
-	return list;
-}
